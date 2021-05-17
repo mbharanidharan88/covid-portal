@@ -1,0 +1,65 @@
+
+<div class="row justify-context-center">
+  <div class="offset-4 col-4">
+    <div class="login-box">
+      <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+          <b>Add Hospital</b>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="hospitalForm" (ngSubmit)="addHospital()">
+            <div class="mb-3">
+              <label for="hospitalName" class="form-label">Hospital Name</label>
+              <input id="hospitalName"
+                     formControlName="hospitalName"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="hospitalCity" class="form-label">City</label>
+              <input id="hospitalCity"
+                     formControlName="hospitalCity"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="numberOfBeds" class="form-label">Number Of Beds</label>
+              <input id="numberOfBeds"
+                     formControlName="numberOfBeds"
+                     type="number"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="oxygenCapacityInTonnes" class="form-label">Oxygen Capacity<small>(in tonnes)</small></label>
+              <input id="oxygenCapacityInTonnes"
+                     formControlName="oxygenCapacityInTonnes"
+                     type="number"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="balanceCapacityInTonnes" class="form-label">Balance Capacity<small>(in tonnes)</small></label>
+              <input id="balanceCapacityInTonnes"
+                     formControlName="balanceCapacityInTonnes"
+                     type="number"
+                     class="form-control" />
+            </div>
+
+
+            <div class="row">
+              <div class="col text-center">
+                <app-button [type]="'submit'"
+                            [block]="false"
+                            [text]="'Add Hospital'"
+                            [loading]="isLoading"></app-button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

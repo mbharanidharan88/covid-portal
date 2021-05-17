@@ -1,0 +1,29 @@
+<!--<p>patient-list works!</p>
+<div>
+  {{patients | json}}
+</div>-->
+
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Covid Test Date</th>
+        <th scope="col">Complications</th>
+        <th scope="col">Waiting for</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td>{{patient.patientName}}</td>
+        <td>{{patient.email}}</td>
+        <td>{{patient.mobile}}</td>
+        <td>{{patient.covidTestedDate}}</td>
+        <td>{{patient.healthComplications}}</td>
+        <td>{{patient.daysInQueue}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

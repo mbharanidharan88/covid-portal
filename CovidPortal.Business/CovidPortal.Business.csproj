@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CovidPortal.Data\CovidPortal.Data.csproj" />
+    <ProjectReference Include="..\CovidPortal.Domain\CovidPortal.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+<!--<p>hospital-list works!</p>
+<div>
+  {{vendors|json}}
+</div>-->
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Vendor Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Products</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vendor of vendors">
+        <td>{{vendor.vendorName}}</td>
+        <td>{{vendor.vendorCity}}</td>
+        <td>{{vendor.product}}</td>
+        <td>{{vendor.email}}</td>
+        <td>{{vendor.mobile}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

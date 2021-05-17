@@ -1,0 +1,23 @@
+{
+  "name": "covid-portal.patients-api",
+  "version": "0.0.0",
+  "description": "CovidPortal.PatientsAPI",
+  "main": "server.js",
+  "dependencies": {
+    "@types/node": "15.3.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "express-jwt": "^6.0.0",
+    "https": "^1.0.0",
+    "jwks-rsa": "^2.0.3",
+    "mongoose": "^5.12.9",
+    "oidc-client": "^1.11.5",
+    "rootpath": "0.1.2",
+    "ssl-root-cas": "^1.3.1"
+  },
+  "author": {
+    "name": "Bharanidharan Murugaiyan"
+  },
+  "license": "ISC"
+}

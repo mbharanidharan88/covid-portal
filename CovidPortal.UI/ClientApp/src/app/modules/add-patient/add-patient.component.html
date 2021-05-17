@@ -1,0 +1,79 @@
+
+<div class="row justify-context-center">
+  <div class="offset-4 col-4">
+    <div class="login-box">
+      <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+          <b>Add Patient</b>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="patientForm" (ngSubmit)="addPatient()">
+            <div class="mb-3">
+              <label for="patientName" class="form-label">Patient Name</label>
+              <input id="patientName"
+                     formControlName="patientName"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email"
+                     formControlName="email"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input id="mobile"
+                     formControlName="mobile"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="health" class="form-label">Health Complications</label>
+              <textarea id="health"
+                        formControlName="healthComplications"
+                        class="form-control"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="covidTestedDate" class="form-label">Covid Tested Date</label>
+              <input id="covidTestedDate"
+                     formControlName="covidTestedDate"
+                     type="text"
+                     autocomplete="off"
+                     class="form-control"
+                     bsDatepicker
+                     [bsConfig]="{ isAnimated: true }" />
+            </div>
+
+            <div class="mb-3">
+              <label for="covidTestedTime" class="form-label">Covid Tested Time</label>
+              <timepicker id="covidTestedTime" formControlName="covidTestedTime"></timepicker>
+            </div>
+
+            <div class="mb-3">
+              <label for="daysInQueue" class="form-label">Days In Queue</label>
+              <input id="daysInQueue"
+                     formControlName="daysInQueue"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="row">
+              <div class="col text-center">
+                <app-button [type]="'submit'"
+                            [block]="false"
+                            [text]="'Add Patient'"
+                            [loading]="isLoading"></app-button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

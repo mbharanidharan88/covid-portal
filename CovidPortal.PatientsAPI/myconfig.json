@@ -1,0 +1,10 @@
+{
+  "DBHost": "localhost:27017",
+  "DBUser": "admin",
+  "DBPass": "admin",
+
+  "Secret": "Admin$1234",
+  "TokenExpiry": "1h",
+  "DefaultRole": "User",
+  "DefaultUserColor": "#CCC"
+}

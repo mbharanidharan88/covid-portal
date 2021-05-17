@@ -1,0 +1,65 @@
+
+<div class="row justify-context-center">
+  <div class="offset-4 col-4">
+    <div class="login-box">
+      <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+          <b>Add Vendor</b>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="vendorForm" (ngSubmit)="addVendor()">
+            <div class="mb-3">
+              <label for="vendorName" class="form-label">Vendor Name</label>
+              <input id="vendorName"
+                     formControlName="vendorName"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="vendorCity" class="form-label">City</label>
+              <input id="vendorCity"
+                     formControlName="vendorCity"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="product" class="form-label">Products</label>
+              <input id="product"
+                     formControlName="product"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email"
+                     formControlName="email"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input id="mobile"
+                     formControlName="mobile"
+                     type="text"
+                     class="form-control" />
+            </div>
+
+
+            <div class="row">
+              <div class="col text-center">
+                <app-button [type]="'submit'"
+                            [block]="false"
+                            [text]="'Add Vendor'"
+                            [loading]="isLoading"></app-button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
